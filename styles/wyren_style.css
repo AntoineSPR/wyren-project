@@ -332,11 +332,15 @@ label {
     }
 
     .banner-logo {
-        width: 60%
+        width: 80%
     }
 }
 
 @media screen and (max-width: 414px) {
+    .banner-logo {
+        width: 90%;
+    }
+
     .songs,
     .footer-links {
         flex-direction: column;

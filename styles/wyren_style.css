@@ -337,10 +337,6 @@ label {
 }
 
 @media screen and (max-width: 414px) {
-    .banner {
-        background-position: -300px -30px;
-    }
-
     .songs,
     .footer-links {
         flex-direction: column;
@@ -374,6 +370,7 @@ label {
     .epk a {
         line-height: 1.5;
         font-size: 1em;
+        white-space: nowrap;
     }
 
     .nom-email {

@@ -65,7 +65,7 @@ strong {
 
 .banner-logo {
     position: absolute;
-    width: 30%;
+    max-width: 30%;
     max-height: 250px;
     top: 0;
     right: 0;

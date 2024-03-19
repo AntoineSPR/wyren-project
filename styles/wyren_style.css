@@ -4,20 +4,22 @@ body {
     background-color: black;
     font-family: Montserrat, sans-serif;
     --color-primary: rgb(208, 248, 254);
-    --color-nav: #0d4f46;
+    --color-nav:  #f39c12;
     --color-link: rgb(208, 248, 254);
     --color-strong: chocolate;
     --shadow-box: var(--shadow-card);
-    --shadow-card:0px 0px 20px 6px rgba(208, 248, 254, 0.7) /*0px 0px 20px 12px rgba(13, 79, 70, 0.7)*/;
+    --shadow-card: 0px 0px 20px 6px rgba(208, 248, 254, 0.7);
     color: var(--color-primary);
 }
-a:visited {
+a:visited, 
+a:link {
     text-decoration: none;
     color: var(--color-primary);
 }
 
 a {
     text-decoration: none;
+    color: d
 }
 
 h1,
@@ -32,8 +34,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-family: Philosopher, serif;
+    margin: 30px;
 }
 
 p {
@@ -64,10 +67,10 @@ strong {
 }
 
 .banner-logo {
-    position: absolute;
-    width: 30%;
-    top: 0;
-    right: 0;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 /* Footer */
@@ -105,7 +108,7 @@ nav {
     text-align: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -116,11 +119,12 @@ nav a {
     border-radius: 6px;
     background-color: var(--color-nav);
     padding: 10px 20px;
-    margin: 5px 3px;
+    margin: 5px;
     color: var(--color-link);
     text-transform: uppercase;
     border: none;
     font-family: Cinzel, serif;
+    font-weight: bold;
 }
 
 nav a:visited {
@@ -253,7 +257,6 @@ nav a:hover {
     line-height: 1.5;
     padding: 30px 70px;
     margin: auto;
-    /* box-shadow: var(--shadow-card); */
 }
 
 form {
@@ -298,27 +301,9 @@ label {
 
 /* Responsive */
 
-@media screen and (min-width: 1600px) {
-    .banner-logo {
-        width: 20%
-    }
-}
-
 @media screen and (max-width: 996px) {
-    nav {
-        justify-content: center;
-    }
-
     .photos {
         grid-template-columns: 1fr 1fr;
-    }
-
-    .banner-logo {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        text-align: center;
     }
 }
 
@@ -336,17 +321,9 @@ label {
         padding: 0 30px;
         flex-direction: column;
     }
-
-    .banner-logo {
-        width: 80%
-    }
 }
 
 @media screen and (max-width: 414px) {
-    .banner-logo {
-        width: 90%;
-    }
-
     .songs,
     .footer-links {
         flex-direction: column;

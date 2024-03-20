@@ -2,6 +2,7 @@
     <head>
         <meta charset="utf-8">
         <link href="styles/wyren_style.css" rel="stylesheet">
+        <script src="scripts/photo_album.js" defer></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Wyren Website</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,35 +23,33 @@
                 <a href="wyren_about.html">A propos</a>
                 <a href="wyren_contact.html">Contact</a>
             </nav>
+
+            <div id="overlay" onclick="fermerOverlay()"></div>
+            <div id="conteneurImage">
+                <img id="image" src=""></img>
+            </div>
+
             <h1>Photos</h1>
             <section class="photos">
-                <a href="media/puzzle1.jpg" class="lien-photo">
-                    <img src="media/puzzle1-sq.jpg">
-                </a>
-                <a href="media/Wyren-briselames.jpg" class="lien-photo">
-                    <img src="media/Wyren-briselames-sq.jpg">
-                </a>
-                <a href="media/puzzle3.jpg" class="lien-photo">
-                    <img src="media/puzzle3-sq.jpg">
-                </a>
-                <a href="media/plage.jpg" class="lien-photo">
-                    <img src="media/plage-sq.jpg">
-                </a>   
-                <a href="media/WP-band.jpg" class="lien-photo">
-                    <img src="media/WP-band-sq.jpg">
-                </a>
-                <a href="media/Wyren-lac.jpg" class="lien-photo">
-                    <img src="media/Wyren-lac-sq.jpg">
-                </a>
-                <a href="media/Wyren-live1.jpg" class="lien-photo">
-                    <img src="media/Wyren-live1-sq.jpg">
-                </a>
-                <a href="media/Wyren-live2.jpg" class="lien-photo">
-                    <img src="media/Wyren-live2-sq.jpg">
-                </a>
-                <a href="media/Wyren-live3.jpg" class="lien-photo">
-                    <img src="media/Wyren-live3-sq.jpg">
-                </a>
+
+                <img src="media/puzzle1-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/puzzle1.jpg')">                    
+                
+                <img src="media/Wyren-briselames-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/Wyren-briselames.jpg')">
+
+                <img src="media/puzzle3-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/puzzle3.jpg')">
+ 
+                <img src="media/plage-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/plage.jpg')">
+   
+                <img src="media/WP-band-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/WP-band.jpg')">
+      
+                <img src="media/Wyren-lac-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/Wyren-lac.jpg')">
+
+                <img src="media/Wyren-live1-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/Wyren-live1.jpg')">
+
+                <img src="media/Wyren-live2-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/Wyren-live2.jpg')">
+
+                <img src="media/Wyren-live3-sq.jpg" class="lien-photo" onclick="ouvrirOverlay('media/Wyren-live3.jpg')">
+
             </section>
             <section class="credits">
                 <h1>Crédits</h1>

@@ -24,19 +24,19 @@
             </nav>
             <h1>Booking et requêtes</h1>
             <section class="contact">
-                <form method="get" action="">
+                <form method="post" action="mailto:contact.wyren@gmail.com" enctype="text/plain">
                     <div class="nom-email">
                         <div class="email">
                             <label for="email">Votre e-mail :</label>
-                            <input type="email" id="email" name="email" required autofocus disabled><br><!-- add : required-->
+                            <input type="email" id="email" name="email" required autofocus><br><!-- add : required-->
                         </div>
                         <div class="nom">
                             <label for="name">Votre nom :</label>
-                            <input type="text" id="name" name="name" required disabled><br>
+                            <input type="text" id="name" name="name" required><br>
                         </div>
                     </div>
                     <label for="text">Votre message :</label>
-                    <textarea id="text" name="text" required disabled></textarea>
+                    <textarea id="text" name="text" required></textarea>
                     <input class="submit" type="submit" value="Envoyer">
                 </form>
                 <div class="contact-info">

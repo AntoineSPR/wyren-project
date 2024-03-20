@@ -330,10 +330,12 @@ input,
 textarea {
     padding: 10px;
     border-radius: 3px;
+    font-size: 1em;
 }
 
 textarea {
     height: 250px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 label {

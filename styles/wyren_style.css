@@ -5,6 +5,7 @@ body {
     font-family: Montserrat, sans-serif;
     --color-primary: rgb(208, 248, 254);
     --color-nav:  #f39c12;
+    --color-hover: chocolate;
     --color-strong: chocolate;
     --shadow-card: 0px 0px 20px 6px rgba(208, 248, 254, 0.7);
     color: var(--color-primary);
@@ -102,6 +103,11 @@ footer {
     max-width: 80px;
 }
 
+.sm-links img:hover{
+    opacity: 80%;
+    transition: opacity .2s ease;
+}
+
 .logo img {
     max-width: 300px;
 }
@@ -136,7 +142,8 @@ nav a:visited {
 }
 
 nav a:hover {
-    opacity: 70%;
+    background-color: var(--color-hover);
+    transition: background-color .2s ease;
 }
 
 /* Page d'accueil (index) */
@@ -296,7 +303,8 @@ nav a:hover {
 }
 
 .epk a:hover {
-    opacity: 70%;
+    background-color: var(--color-hover);
+    transition: background-color .2s ease;
 }
 
 /* Page contact (wyren_contact) */
@@ -385,6 +393,11 @@ label {
 }
 
 @media screen and (max-width: 414px) {
+    nav a{
+        padding: 10px 6px;
+        margin: 1px;
+    }
+    
     .songs,
     .footer-links {
         flex-direction: column;

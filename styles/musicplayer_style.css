@@ -2,16 +2,15 @@
  .prev-track,
  .next-track {
      padding: 2%;
-     opacity: 0.8;
-     transition: opacity .2s;
+     transition: color .2s;
      color: var(--color-nav);
  }
 
  .playpause-track:hover,
  .prev-track:hover,
  .next-track:hover {
-     opacity: 1;
- }
+    color: var(--color-hover);    
+}
 
  .slider-container {
      display: flex;
@@ -26,14 +25,6 @@
      appearance: none;
      height: 5px;
      background: black;
-     opacity: 0.7;
-     -webkit-transition: .2s;
-     transition: opacity .2s;
- }
-
- .seek-slider:hover,
- .volume-slider:hover {
-     opacity: 1.0;
  }
 
  .seek-slider::-webkit-slider-thumb,
@@ -43,7 +34,7 @@
      appearance: none;
      width: 15px;
      height: 15px;
-     background: white;
+     background: var(--color-primary);
      cursor: pointer;
      border-radius: 50%;
      margin-top: -6.5px;
@@ -51,13 +42,13 @@
 
  .seek-slider::-webkit-slider-runnable-track,
  .volume-slider::-webkit-slider-runnable-track {
-     background: white;
+     background: var(--color-primary);
      height: 2px;
  }
 
  .seek-slider::-moz-range-track,
  .volume-slider::-moz-range-track {
-     background: white;
+     background: var(--color-primary);
      height: 2px;
  }
 
@@ -86,6 +77,14 @@
      cursor: pointer;
  }
 
+ .prev-track,
+ .playpause-track,
+ .next-track {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
  .player {
      display: grid;
      grid-template-columns: minmax(auto, 180px) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
@@ -94,11 +93,11 @@
      grid-row-gap: 0px;
      max-width: 80vw;
      height: 180px;
-     margin: auto;
-     margin-bottom: 5vh;
+     margin: 50px auto;
      background-color: black;
-     color: white;
+     color: var(--color-primary);
      box-shadow: var(--shadow-card);
+     font-family: Philosopher, serif;
  }
 
  .art {
@@ -122,18 +121,19 @@
      font-size: 1.7rem;
      display: flex;
      align-items: center;
+     font-weight: bold;
  }
 
  .track-artist {
      grid-area: 2 / 2 / 3 / 4;
      padding-left: 4%;
-     font-family: Philosopher, serif;
  }
 
  .now-playing {
      grid-area: 1 / 5 / 2 / 6;
      text-align: right;
      padding: 10px 10%;
+     font-weight: bold;
  }
 
  .external-link {
@@ -157,6 +157,7 @@
 
  .prev-track {
      grid-area: 4 / 2 / 5 / 3;
+     justify-content: right;
  }
 
  .playpause-track {
@@ -166,26 +167,11 @@
 
  .next-track {
      grid-area: 4 / 4 / 5 / 5;
+     justify-content: left;
  }
 
  .volume {
      grid-area: 4 / 5 / 5 / 6;
- }
-
- .prev-track,
- .playpause-track,
- .next-track {
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
-
- .prev-track{
-    justify-content: right;
- }
-
- .next-track {
-    justify-content: left;
  }
 
  .mobile-external-link {

@@ -1,11 +1,3 @@
- .track-name {
-     font-size: 2rem;
- }
-
- .track-artist {
-     font-size: 1rem;
- }
-
  .playpause-track,
  .prev-track,
  .next-track {
@@ -127,11 +119,15 @@
      grid-area: 1 / 2 / 2 / 5;
      padding-left: 2%;
      color: var(--color-nav);
+     font-size: 1.7rem;
+     display: flex;
+     align-items: center;
  }
 
  .track-artist {
      grid-area: 2 / 2 / 3 / 4;
      padding-left: 4%;
+     font-family: Philosopher, serif;
  }
 
  .now-playing {
@@ -142,7 +138,7 @@
 
  .external-link {
      grid-area: 2 / 4 / 3 / 6;
-     text-align: right;
+     text-align: center;
      padding: 1% 5%;
      background-color: var(--color-nav);
      border-radius: 10px;
@@ -192,6 +188,10 @@
     justify-content: left;
  }
 
+ .mobile-external-link {
+    display: none;
+ }
+
  @media screen and (max-width: 900px) {
     .player {
         max-width: 560px;
@@ -202,6 +202,14 @@
      .player {
          grid-template-columns: 0fr 1fr 1fr 1fr 1fr;
          max-width: 90vw;
+     }
+
+     .mobile-external-link {
+        display: inline;
+     }
+
+     .desktop-external-link {
+        display: none;
      }
 
      .track-art {
@@ -223,6 +231,6 @@
      .external-link {
          text-align: center;
          padding: 4% 2%;
-         margin-left: 20%;
+         margin: auto 10px;
      }
  }

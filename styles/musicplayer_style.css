@@ -1,0 +1,228 @@
+ .track-name {
+     font-size: 2rem;
+ }
+
+ .track-artist {
+     font-size: 1rem;
+ }
+
+ .playpause-track,
+ .prev-track,
+ .next-track {
+     padding: 2%;
+     opacity: 0.8;
+     transition: opacity .2s;
+     color: var(--color-nav);
+ }
+
+ .playpause-track:hover,
+ .prev-track:hover,
+ .next-track:hover {
+     opacity: 1;
+ }
+
+ .slider-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .seek-slider,
+ .volume-slider {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     height: 5px;
+     background: black;
+     opacity: 0.7;
+     -webkit-transition: .2s;
+     transition: opacity .2s;
+ }
+
+ .seek-slider:hover,
+ .volume-slider:hover {
+     opacity: 1.0;
+ }
+
+ .seek-slider::-webkit-slider-thumb,
+ .volume-slider::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     width: 15px;
+     height: 15px;
+     background: white;
+     cursor: pointer;
+     border-radius: 50%;
+     margin-top: -6.5px;
+ }
+
+ .seek-slider::-webkit-slider-runnable-track,
+ .volume-slider::-webkit-slider-runnable-track {
+     background: white;
+     height: 2px;
+ }
+
+ .seek-slider::-moz-range-track,
+ .volume-slider::-moz-range-track {
+     background: white;
+     height: 2px;
+ }
+
+ .seek-slider {
+     width: 60%;
+ }
+
+ .volume-slider {
+     width: 30%;
+ }
+
+ .current-time,
+ .total-duration {
+     padding: 10px;
+ }
+
+ i.fa-volume-down,
+ i.fa-volume-up {
+     padding: 10px;
+ }
+
+ i.fa-play-circle,
+ i.fa-pause-circle,
+ i.fa-step-forward,
+ i.fa-step-backward {
+     cursor: pointer;
+ }
+
+ .player {
+     display: grid;
+     grid-template-columns: minmax(auto, 180px) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr) minmax(auto, 1fr);
+     grid-template-rows: repeat(4, 1fr);
+     grid-column-gap: 0px;
+     grid-row-gap: 0px;
+     max-width: 80vw;
+     height: 180px;
+     margin: auto;
+     margin-bottom: 5vh;
+     background-color: black;
+     color: white;
+     box-shadow: var(--shadow-card);
+ }
+
+ .art {
+     grid-area: 1 / 1 / 5 / 2;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin:5px;
+ }
+
+ .track-art {
+     border-radius: 5%;
+     max-height: 90%;
+     width: auto;
+ }
+
+ .track-name {
+     grid-area: 1 / 2 / 2 / 5;
+     padding-left: 2%;
+     color: var(--color-nav);
+ }
+
+ .track-artist {
+     grid-area: 2 / 2 / 3 / 4;
+     padding-left: 4%;
+ }
+
+ .now-playing {
+     grid-area: 1 / 5 / 2 / 6;
+     text-align: right;
+     padding: 10px 10%;
+ }
+
+ .external-link {
+     grid-area: 2 / 4 / 3 / 6;
+     text-align: right;
+     padding: 1% 5%;
+     background-color: var(--color-nav);
+     border-radius: 10px;
+     margin: auto;
+     margin-right: 5%;
+ }
+
+ .external-link:hover {
+     background-color: var(--color-hover);
+     transition: background-color .2s ease;
+ }
+
+ .seek {
+     grid-area: 3 / 2 / 4 / 6;
+ }
+
+ .prev-track {
+     grid-area: 4 / 2 / 5 / 3;
+ }
+
+ .playpause-track {
+     grid-area: 4 / 3 / 5 / 4;
+     max-height: 70%;    
+ }
+
+ .next-track {
+     grid-area: 4 / 4 / 5 / 5;
+ }
+
+ .volume {
+     grid-area: 4 / 5 / 5 / 6;
+ }
+
+ .prev-track,
+ .playpause-track,
+ .next-track {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .prev-track{
+    justify-content: right;
+ }
+
+ .next-track {
+    justify-content: left;
+ }
+
+ @media screen and (max-width: 900px) {
+    .player {
+        max-width: 560px;
+    }
+ }
+
+ @media screen and (max-width: 760px) {
+     .player {
+         grid-template-columns: 0fr 1fr 1fr 1fr 1fr;
+         max-width: 90vw;
+     }
+
+     .track-art {
+         display: none;
+     }
+
+     .volume {
+         display: none;
+     }
+
+     .playpause-track {
+         grid-area: 4 / 3 / 5 / 5;
+     }
+
+     .next-track {
+         grid-area: 4 / 5 / 5 / 6;
+     }
+
+     .external-link {
+         text-align: center;
+         padding: 4% 2%;
+         margin-left: 20%;
+     }
+ }

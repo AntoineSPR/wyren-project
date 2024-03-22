@@ -130,7 +130,7 @@ nav a {
     background-color: var(--color-nav);
     padding: 10px 20px;
     margin: 5px;
-    color: var(--color-primary);
+    color: white;
     text-transform: uppercase;
     border: none;
     font-family: Cinzel, serif;
@@ -179,6 +179,7 @@ nav a:hover {
 .video-yt {
     box-shadow: var(--shadow-card);
     margin-bottom: 20px;
+    max-height: calc(51vw);
 }
 
 /* Page media (wyren_media) */
@@ -195,6 +196,7 @@ nav a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .photos img:hover {
@@ -212,7 +214,7 @@ nav a:hover {
     z-index: 1000;
 }
 
-#conteneurImage {
+#image-container {
     position : fixed;
     display: none;
     top: 50%;
@@ -230,7 +232,7 @@ nav a:hover {
     z-index: 1002;
 }
 
-#chargement {
+#loading {
     display: none;
     position: absolute; 
     top: 50%;

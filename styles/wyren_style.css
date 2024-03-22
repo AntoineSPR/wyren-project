@@ -250,9 +250,27 @@ nav a:hover {
     padding: 10px 20px;
 }
 
+.credits-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colonne-credits {
+    max-width: 50%;
+}
+
 .credits h1, 
 .credits strong {
     color: var(--color-primary);
+}
+
+.credits h1 {
+    margin: 5px auto;
+}
+
+.credits strong {
+    font-family: Philosopher, serif;
+    font-size: 1.3em;
 }
 
 /* Page : A propos (wyren_about) */
@@ -273,7 +291,7 @@ nav a:hover {
 }
 
 .band p {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 5vw 10vh 5vw;
     margin-bottom: 40px;
 }
 
@@ -395,13 +413,28 @@ label {
         padding: 0 30px;
         flex-direction: column;
     }
+
     .credits {
         margin: 20px 30px;
     }
 
+    .credits-flex {
+        display: block;
+    }
+
+    .colonne-credits {
+        max-width: 100%;
+    }
+
+    .credits p {
+        text-align: initial;
+    }
+
+    .band p {
+        padding-bottom: 5vh;
+    }
+
     nav {
-        /* color: rgb(243, 156, 18);
-        background: rgb(243, 156, 18); */
         background: black;
     }
 
@@ -441,10 +474,6 @@ label {
 
     .news {
         max-width: 90%;
-    }
-
-    p {
-        text-align: initial;
     }
 
     .about,

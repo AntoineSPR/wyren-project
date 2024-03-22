@@ -201,7 +201,6 @@
  @media screen and (max-width: 760px) {
      .player {
          grid-template-columns: 0fr 1fr 1fr 1fr 1fr;
-         max-width: 90vw;
      }
 
      .mobile-external-link {
@@ -233,4 +232,10 @@
          padding: 4% 2%;
          margin: auto 10px;
      }
+ }
+
+ @media screen and (max-width: 580px) {
+    .player {
+        max-width: 90vw;
+    }
  }

@@ -1,23 +1,22 @@
 const overlay = document.getElementById("overlay");
-const conteneurImage = document.getElementById("conteneurImage");
+const imageContainer = document.getElementById("image-container");
 const image = document.getElementById("image");
-const chargement = document.getElementById("chargement");
+const loading = document.getElementById("loading");
 
-function ouvrirOverlay(url) {   
+function openOverlay(url) {   
     overlay.style.display = "block";
-    conteneurImage.style.display = "block";
-    chargement.style.display = "block";
+    imageContainer.style.display = "block";
+    loading.style.display = "block";
 
     image.onload = () => {
-        chargement.style.display = "none";
-        console.log("chargement en cours")
+        loading.style.display = "none";
     }
     image.src = url;
 }
 
-function fermerOverlay() {
+function hideOverlay() {
     overlay.style.display = "none";
-    conteneurImage.style.display = "none";
+    imageContainer.style.display = "none";
     image.src = "";
-    chargement.style.display = "none";
+    loading.style.display = "none";
 }

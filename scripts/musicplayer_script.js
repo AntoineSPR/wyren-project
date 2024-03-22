@@ -42,6 +42,8 @@ function loadTrack(track_index) {
 
     currentTrack.src = track_list[track_index].path;
     currentTrack.load();
+    console.log(currentTrack.src);
+    console.log(currentTrack);
 
     trackArt.src = track_list[track_index].image;
     trackName.textContent = track_list[track_index].name;

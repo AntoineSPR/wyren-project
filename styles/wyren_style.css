@@ -484,7 +484,25 @@ label {
     .epk a {
         line-height: 1.5;
         font-size: 1em;
-        white-space: nowrap;
+        background: none;
+    }
+
+    .epk {
+        text-align: center;
+        margin: 50px auto;
+        padding: 10px;
+        background-color: var(--color-nav);
+        border-radius: 6px;
+        max-width: 60vw;
+    }
+
+    .epk a:hover {
+        background: none;
+    }
+    
+    .epk:hover {
+        background-color: var(--color-hover);
+        transition: background-color .2s ease;
     }
 
     .nom-email {

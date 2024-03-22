@@ -122,7 +122,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav a {
@@ -399,8 +399,8 @@ label {
     }
 
     nav {
-        color: rgba(243, 156, 18, 1);
-        background: none;
+        color: rgb(243, 156, 18);
+        background: rgb(243, 156, 18);
     }
 }
 

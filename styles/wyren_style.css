@@ -5,7 +5,7 @@ body {
     font-family: Montserrat, sans-serif;
     --color-primary: rgb(208, 248, 254);
     --color-nav:  rgba(243, 156, 18, .9);
-    --color-hover: chocolate;
+    --color-hover: rgba(247, 135, 7, .9);
     --color-strong: var(--color-nav);
     --shadow-card: 0px 0px 20px 6px rgba(208, 248, 254, 0.7);
     color: var(--color-primary);
@@ -33,9 +33,9 @@ h1 {
 }
 
 h2 {
-    font-size: 1.7em;
+    font-size: 1.9em;
     font-family: Philosopher, serif;
-    margin: 30px;
+    margin: 80px auto;
     color: var(--color-primary);
     text-shadow: 0px 0px 10px var(--color-primary);
 }
@@ -127,14 +127,15 @@ nav {
 
 nav a {
     border-radius: 6px;
-    background-color: var(--color-nav);
+    background-color: black;
     padding: 10px 20px;
     margin: 5px;
     color: white;
     text-transform: uppercase;
     border: none;
-    font-family: Cinzel, serif;
-    font-weight: bold;
+    font-family: Philosopher, serif;
+    /* font-weight: bold; */
+    font-size: 1.8em;
 }
 
 nav a:visited {
@@ -142,7 +143,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    background-color: var(--color-hover);
+    background-color: var(--color-nav);
     transition: background-color .2s ease;
 }
 
@@ -399,8 +400,14 @@ label {
     }
 
     nav {
-        color: rgb(243, 156, 18);
-        background: rgb(243, 156, 18);
+        /* color: rgb(243, 156, 18);
+        background: rgb(243, 156, 18); */
+        background: black;
+    }
+
+    nav a {
+        background-color: black;
+        font-size: 1.1em;
     }
 }
 

@@ -430,6 +430,10 @@ label {
         text-align: initial;
     }
 
+    .news p {
+        text-align: initial;
+    }
+
     .band p {
         padding-bottom: 5vh;
     }

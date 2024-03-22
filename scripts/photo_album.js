@@ -8,10 +8,11 @@ function openOverlay(url) {
     imageContainer.style.display = "block";
     loading.style.display = "block";
 
+    image.src = url;
+
     image.onload = () => {
         loading.style.display = "none";
     }
-    image.src = url;
 }
 
 function hideOverlay() {

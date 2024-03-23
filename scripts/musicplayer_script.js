@@ -24,15 +24,15 @@ let track_list = [
         name: "Night Walker",
         artist: "Wyren Project",
         image: "https://i1.sndcdn.com/artworks-EYx7FonkHe8O6Htm-RxSFfQ-t500x500.jpg",
-        path: "https://cf-media.sndcdn.com/NawsIsRi1W4e.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vTmF3c0lzUmkxVzRlLjEyOC5tcDMqIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzExMDQ2MzMxfX19XX0_&Signature=b0ApTN~oO1aSLGnFWaCJC8C3uvy9RbFSbHgGQ~2KxbQxTz2aJYvM1CdRIBrg3ZId7ZW98x-mgm9JYa-b9yVezhsF4amcjFjUp1zAMEps1uwT2Eh67Mx9Y~bUoRF9-PcPEi0GwgCczwDvR2kRxXyndwjnzUJ1DRxWjmOsV9RtPFl9NG5kYt7J9JCj2yOHX3RC7U8-U6qJdWl8M3fKEcD2M5Q~ljEj-V5mVZ7SxEwegsYi83E2j5BbOAFAkbSR-zNkYHCNGtpLFS99atXvEonJwnWvf9XTZIvJUg4hi1CR4GpxIwTdbBlu94kovBkcJiDykCjJC~eFdUgGA4r8ejAvZA__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ",
-        url: "https://on.soundcloud.com/fZacJPyywsRGuJxdA"
+        path: "https://docs.google.com/uc?export=download&id=12NFblYTwPe7HwHIN1XWdFJZfOVAs-iE1",
+        url: "https://soundcloud.com/wyrenmusic/nightwalker?in=wyrenmusic/sets/wyren-project-demos&si=22dad5cbf0cb4dc7855a1ec3b29e3d8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     {
         name: "Letting Go",
         artist: "Wyren Project",
         image: "https://i1.sndcdn.com/artworks-KjpKfRmKe7GOSHyy-JKA32Q-t500x500.jpg",
-        path: "https://cf-media.sndcdn.com/qH9nPWnqbm27.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vcUg5blBXbnFibTI3LjEyOC5tcDMqIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzExMDQ1MTk4fX19XX0_&Signature=FX63ZlhpwjnfWvga9UbwvKOSmwPYwNQI9TOczmQU8OZC~GEGpUmG6pUKzVBHvuEnhVHJgA8AHlLGJzC0FdjO1ioOs75oaerqXrcjmjnFPte4Dk4GR08fqEg4trUip1KfYhbTuxVXSdvHXn0P6fB11b1EgFFa0x4UzfC69ohmSYvBCTmsLH~ZgP-kyvTpK0no91zYdkMPctOUt94gl2503APHqfoNIFVyck0ZaW67Bn7yBTheAeEzJJd45Xq6Pn657Vec-300UupdEQX9w4bBfjthKQhZV33omgolx6empN3l2oRVnhY~p7oTImsKqMh-9waBLFQXfhHga1DV8P6adQ__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ",
-        url : "https://on.soundcloud.com/iGip7EBcw44Q8QfGA"
+        path: "https://docs.google.com/uc?export=download&id=1AvWCMXTU2B5oeRm8-N6Jrxq6C5o5qTrG",
+        url : "https://soundcloud.com/wyrenmusic/letting-go?in=wyrenmusic/sets/wyren-project-demos&si=191d2c70df9b445491938047dd70497f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
 ];
 
@@ -42,7 +42,8 @@ function loadTrack(track_index) {
 
     currentTrack.src = track_list[track_index].path;
     currentTrack.load();
-    console.log(currentTrack.src);
+
+    //Troubleshooting:
     console.log(currentTrack);
 
     trackArt.src = track_list[track_index].image;

@@ -24,14 +24,14 @@ let track_list = [
         name: "Night Walker",
         artist: "Wyren Project",
         image: "https://i1.sndcdn.com/artworks-EYx7FonkHe8O6Htm-RxSFfQ-t500x500.jpg",
-        path: "https://docs.google.com/uc?export=download&id=12NFblYTwPe7HwHIN1XWdFJZfOVAs-iE1",
+        path: "media/Night-Walker-v5.mp3",
         url: "https://soundcloud.com/wyrenmusic/nightwalker?in=wyrenmusic/sets/wyren-project-demos&si=22dad5cbf0cb4dc7855a1ec3b29e3d8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
     {
         name: "Letting Go",
         artist: "Wyren Project",
         image: "https://i1.sndcdn.com/artworks-KjpKfRmKe7GOSHyy-JKA32Q-t500x500.jpg",
-        path: "https://docs.google.com/uc?export=download&id=1AvWCMXTU2B5oeRm8-N6Jrxq6C5o5qTrG",
+        path: "media/Letting-Go-v7.mp3",
         url : "https://soundcloud.com/wyrenmusic/letting-go?in=wyrenmusic/sets/wyren-project-demos&si=191d2c70df9b445491938047dd70497f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
     },
 ];

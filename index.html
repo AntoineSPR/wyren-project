@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -44,14 +45,16 @@
                     <span class="desktop-external-link">Ecouter sur SoundCloud</span>
                     <span class="mobile-external-link">Soundcloud <i class="fa fa-external-link-alt"></i></span>
                 </a>
-                <div class="prev-track" onclick="prevTrack()">
-                    <i class="fa fa-step-backward fa-2x"></i>
-                </div>
-                <div class="playpause-track" onclick="playpauseTrack()">
-                    <i class="fa fa-play-circle fa-3x"></i>
-                </div>
-                <div class="next-track" onclick="nextTrack()">
-                    <i class="fa fa-step-forward fa-2x"></i>
+                <div class="player-buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-3x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
                 </div>
                 <div class="slider-container seek">
                     <div class="current-time">00:00</div>
@@ -64,7 +67,7 @@
                     <i class="fa fa-volume-up"></i>
                 </div>
             </div>
-        <!--
+            <!--
             <div class="songs">
                 <div class="song-sc">
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"

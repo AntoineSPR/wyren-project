@@ -33,28 +33,30 @@
         <div id="overlay" onclick="hideOverlay()"></div>
         <div id="image-container">
             <div id="loading">Chargement...</div>
-            <img id="image" src=""></img>
+            <span id="prevImg" onclick="previousImage()">&#10094;</span>
+            <img id="image" src=""><span id="x" onclick="hideOverlay()">&times;</span>
+            <span id="nextImg" onclick="nextImage()">&#10095;</span>
         </div>
 
         <section class="photos">
 
-            <img src="media/puzzle1-sq.jpg" onclick="openOverlay(this)">
+            <img id="0" src="media/puzzle1-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/Wyren-briselames-sq.jpg" onclick="openOverlay(this)">
+            <img id="1" src="media/Wyren-briselames-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/puzzle3-sq.jpg" onclick="openOverlay(this)">
+            <img id="2" src="media/puzzle3-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/plage-sq.jpg" onclick="openOverlay(this)">
+            <img id="3" src="media/plage-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/WP-band-sq.jpg" onclick="openOverlay(this)">
+            <img id="4" src="media/WP-band-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/Wyren-lac-sq.jpg" onclick="openOverlay(this)">
+            <img id="5" src="media/Wyren-lac-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/Wyren-live1-sq.jpg" onclick="openOverlay(this)">
+            <img id="6" src="media/Wyren-live1-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/Wyren-live2-sq.jpg" onclick="openOverlay(this)">
+            <img id="7" src="media/Wyren-live2-sq.jpg" onclick="openOverlay(this)">
 
-            <img src="media/Wyren-live3-sq.jpg" onclick="openOverlay(this)">
+            <img id="8" src="media/Wyren-live3-sq.jpg" onclick="openOverlay(this)">
 
         </section>
         <section class="credits">

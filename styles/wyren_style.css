@@ -234,14 +234,6 @@ nav a:hover {
     z-index: 1002;
 }
 
-#loading {
-    display: none;
-    position: absolute; 
-    top: 50%;
-    left : 50%;
-    transform: translate(-50%, -50%);
-}
-
 #x {
     position: fixed;
     top: 0;

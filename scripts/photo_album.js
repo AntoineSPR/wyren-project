@@ -4,6 +4,8 @@ const loading = document.getElementById("loading");
 const smallImage = document.querySelectorAll(".photos img");
 const fullImage = document.getElementById("image");
 
+let currentImage = 0;
+
 //Fonction d'affichage de l'overlay et de la photo en grande taille//
 function openOverlay(image) {   
     overlay.style.display = "block";
@@ -11,6 +13,7 @@ function openOverlay(image) {
     loading.style.display = "block";
 
     fullImage.src = image.src.replace("-sq.jpg", ".jpg");
+    currentImage = Number(image.id);
 
     //Disparition du message de chargement dès que l'image est chargée//
     fullImage.onload = () => {
@@ -34,3 +37,16 @@ function hideOverlay() {
     loading.style.display = "none";
 }
 
+function nextImage() {
+    currentImage = (currentImage + 1) % smallImage.length;
+    image = smallImage[currentImage];
+    openOverlay(image);
+    loading.style.display = "none";
+}
+
+function previousImage() {
+    currentImage = (currentImage - 1 + smallImage.length) % smallImage.length;
+    image = smallImage[currentImage];
+    openOverlay(image);
+    loading.style.display = "none";
+}

@@ -30,12 +30,14 @@
             <a href="wyren_contact.html">Contact</a>
         </nav>
 
-        <div id="overlay" onclick="hideOverlay()"></div>
+        <div id="overlay">
+            <div id="prevImg" onclick="previousImage()">&#10094;</div>
+            <div id="x" onclick="hideOverlay()">&times;</div>
+            <div id="nextImg" onclick="nextImage()">&#10095;</div>
+        </div>
+        
         <div id="image-container">
-            <div id="loading">Chargement...</div>
-            <span id="prevImg" onclick="previousImage()">&#10094;</span>
-            <img id="image" src=""><span id="x" onclick="hideOverlay()">&times;</span>
-            <span id="nextImg" onclick="nextImage()">&#10095;</span>
+            <img id="image" src="">
         </div>
 
         <section class="photos">

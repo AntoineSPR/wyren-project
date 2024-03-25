@@ -226,7 +226,7 @@ nav a:hover {
 }
 
 #image {
-    display : block;
+    display : inline-block;
     max-height: 90vh;
     max-width: 90vw;
     width: auto;
@@ -240,6 +240,26 @@ nav a:hover {
     top: 50%;
     left : 50%;
     transform: translate(-50%, -50%);
+}
+
+#x {
+    position: fixed;
+    top: -35px;
+    right: -40px;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+#prevImg,
+#nextImg {
+    position: fixed;
+    top: 40%;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+#prevImg {
+    left: -44px;
 }
 
 .credits {

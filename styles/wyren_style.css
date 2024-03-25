@@ -244,10 +244,11 @@ nav a:hover {
 
 #x {
     position: fixed;
-    top: -35px;
-    right: -40px;
+    top: 0;
+    right: 50px;
     font-size: 5em;
     cursor: pointer;
+    z-index: 1003;
 }
 
 #prevImg,
@@ -256,10 +257,15 @@ nav a:hover {
     top: 40%;
     font-size: 5em;
     cursor: pointer;
+    z-index: 1003;
 }
 
 #prevImg {
-    left: -44px;
+    left: 50px;
+}
+
+#nextImg {
+    right: 50px;
 }
 
 .credits {

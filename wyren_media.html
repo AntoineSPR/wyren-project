@@ -30,10 +30,10 @@
             <a href="wyren_contact.html">Contact</a>
         </nav>
 
-        <div id="overlay">
-            <div id="prevImg" onclick="previousImage()">&#10094;</div>
+        <div id="overlay" onclick="hideOverlay()">
+            <div id="prevImg" onclick="previousImage(event)">&#10094;</div>
             <div id="x" onclick="hideOverlay()">&times;</div>
-            <div id="nextImg" onclick="nextImage()">&#10095;</div>
+            <div id="nextImg" onclick="nextImage(event)">&#10095;</div>
         </div>
         
         <div id="image-container">

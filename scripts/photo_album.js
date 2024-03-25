@@ -16,21 +16,20 @@ function openOverlay(image) {
 
 function hideOverlay() {
     overlay.style.display = "none";
-    imageContainer.style.display = "none";
+    imageContainer.classList.remove("show");
     fullImage.src = "";
-    loading.style.display = "none";
 }
 
-function nextImage() {
+function nextImage(event) {
+    event.stopPropagation();
     currentImage = (currentImage + 1) % smallImage.length;
     image = smallImage[currentImage];
     openOverlay(image);
-    loading.style.display = "none";
 }
 
-function previousImage() {
+function previousImage(event) {
+    event.stopPropagation();
     currentImage = (currentImage - 1 + smallImage.length) % smallImage.length;
     image = smallImage[currentImage];
     openOverlay(image);
-    loading.style.display = "none";
 }

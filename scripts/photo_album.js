@@ -16,7 +16,6 @@ function openOverlay(image) {
 
 function hideOverlay() {
     overlay.style.display = "none";
-    imageContainer.classList.remove("show");
     fullImage.src = "";
 }
 

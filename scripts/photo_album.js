@@ -7,23 +7,25 @@ const overlay = document.getElementById("overlay");
 let currentImage = 0;
 
 function openOverlay(image) {
+    fullImage.src = image.src.replace("-sq.jpg", ".jpg");
+
     slides.style.display = "block";
     setTimeout(() => {
         imageContainer.style.opacity = 1;
         overlay.style.opacity = 1;
     }, 50);
 
-    fullImage.src = image.src.replace("-sq.jpg", ".jpg");
     currentImage = Number(image.id);
 }
 
 function hideOverlay() {
+    fullImage.src = "";
+
     slides.style.display = "none";
     setTimeout(() => {
         imageContainer.style.opacity = 0;
         overlay.style.opacity = 0;
     }, 50);
-    fullImage.src = "";
 }
 
 function nextImage() {

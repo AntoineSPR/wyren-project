@@ -445,7 +445,6 @@ label {
         width: 15vw;
         top: 0;
         height: 100vh;
-        background-color: silver;
         filter: blur(5px);
         opacity: 0;
         color: transparent;
@@ -453,15 +452,17 @@ label {
 
     #prevImg:hover,
     #nextImg:hover {
-        opacity: .3;
+        opacity: .5;
     }
 
     #prevImg {
-        left: 0;
+        left: -4px;
+        background: linear-gradient(90deg, silver, transparent);
     }
 
     #nextImg {
-        right: 0;
+        right: -4px;
+        background: linear-gradient(-90deg, silver, transparent);
     }
 
     #x {
@@ -521,6 +522,11 @@ label {
     h2 {
         font-size: 1.6em;
         max-width: 90vw;
+    }
+
+    #x {
+        top: auto;
+        bottom: 20px;
     }
 }
 

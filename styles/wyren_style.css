@@ -459,6 +459,11 @@ label {
         opacity: .5;
     }
 
+    #prevImg:active,
+    #nextImg:active {
+        opacity: 0;
+    }
+
     #prevImg {
         left: -4px;
         background: linear-gradient(90deg, silver, transparent);
@@ -530,7 +535,8 @@ label {
 
     #x {
         top: auto;
-        bottom: 20px;
+        bottom: -20px;
+        left: 45%;
     }
 }
 

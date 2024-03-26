@@ -3,12 +3,12 @@ Projet de développement web : site vitrine de groupe de musique
 
 https://antoinespr.github.io/wyren-project/index.html
 
-Front-end (HTML, CSS, Javascript - sans framework) :
+Front-end (HTML, CSS, Javascript) :
 > Design responsive (version ordinateur, tablette et mobile)
 
-> Lecteur audio sur la page d'accueil
+> Lecteur audio sur la page d'accueil (avec version mobile)
 
-> Album photo sur la page media
+> Album photo sur la page media (avec version mobile)
 
 Back-end : à venir !
 

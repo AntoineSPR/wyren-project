@@ -456,12 +456,12 @@ label {
 
     #prevImg:hover,
     #nextImg:hover {
-        opacity: .5;
+        opacity: 0;
     }
 
     #prevImg:active,
     #nextImg:active {
-        opacity: 0;
+        opacity: .5;
     }
 
     #prevImg {

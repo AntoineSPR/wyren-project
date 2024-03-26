@@ -43,3 +43,12 @@ function previousImage() {
             openOverlay(image);
         }, 300);
 }
+
+function preloadImages() {
+    smallImage.forEach(img => {
+        const image = new Image();
+        image.src = img.src.replace("-sq.jpg", ".jpg");
+    });
+}
+
+window.addEventListener('load', preloadImages);

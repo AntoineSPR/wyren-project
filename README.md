@@ -8,7 +8,7 @@ Front-end (HTML, CSS, Javascript - sans framework) :
 
 > Lecteur audio sur la page d'accueil
 
-> Album photo sur la page media (/!\ défilement en cours d'adaptation pour tous les formats d'écran / transitions en cours d'ajout)
+> Album photo sur la page media
 
 Back-end : à venir !
 

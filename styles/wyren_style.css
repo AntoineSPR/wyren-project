@@ -218,6 +218,8 @@ nav a:hover {
     height: 150%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1000;
+    transition: opacity .4s ease;
+    opacity: 0;
 }
 
 #image-container {
@@ -226,6 +228,8 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
+    transition: opacity .4s ease;
+    opacity: 0;
 }
 
 #image {

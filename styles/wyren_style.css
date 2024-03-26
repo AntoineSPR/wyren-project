@@ -439,6 +439,12 @@ label {
 
 /* Responsive */
 
+@media screen and (min-width: 1440px) {
+    .news p {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 996px) {
     .photos {
         grid-template-columns: 1fr 1fr;

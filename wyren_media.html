@@ -30,16 +30,18 @@
             <a href="wyren_contact.html">Contact</a>
         </nav>
 
-        <div id="overlay" onclick="hideOverlay()">
-            <div id="prevImg" onclick="previousImage(event)">&#10094;</div>
-            <div id="x" onclick="hideOverlay()">&times;</div>
-            <div id="nextImg" onclick="nextImage(event)">&#10095;</div>
-        </div>
-        
-        <div id="image-container">
-            <img id="image" src="">
-        </div>
+        <section class="slides">
+            <div id="overlay" onclick="hideOverlay()"></div>
 
+            <div id="image-container">
+                <img id="image" src="">
+            </div>
+
+            <div id="prevImg" onclick="previousImage()">&#10094;</div>
+            <div id="x" onclick="hideOverlay()">&times;</div>
+            <div id="nextImg" onclick="nextImage()">&#10095;</div>
+        </section>
+        
         <section class="photos">
 
             <img id="0" src="media/puzzle1-sq.jpg" onclick="openOverlay(this)">

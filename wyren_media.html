@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles/wyren_style.css" rel="stylesheet">
+    <script src="scripts/photo_album.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyren Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class=banner>
+            <div class="banner-logo"><a href="index.html"><img src="media/WP-logo.png" alt="Wyren Project"></a></div>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="wyren_media.html">Media</a>
+            <a href="wyren_about.html">A propos</a>
+            <a href="wyren_contact.html">Contact</a>
+        </nav>
+
+        <section class="slides">
+            <div id="overlay" onclick="hideOverlay()"></div>
+
+            <div id="image-container">
+                <img id="image" src="">
+            </div>
+
+            <div id="prevImg" onclick="previousImage()">&#10094;</div>
+            <div id="x" onclick="hideOverlay()">&times;</div>
+            <div id="nextImg" onclick="nextImage()">&#10095;</div>
+        </section>
+        
+        <section class="photos">
+
+            <img id="0" src="media/puzzle1-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="1" src="media/Wyren-briselames-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="2" src="media/puzzle3-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="3" src="media/plage-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="4" src="media/WP-band-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="5" src="media/Wyren-lac-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="6" src="media/Wyren-live1-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="7" src="media/Wyren-live2-sq.jpg" onclick="openOverlay(this)">
+
+            <img id="8" src="media/Wyren-live3-sq.jpg" onclick="openOverlay(this)">
+
+        </section>
+        <section class="credits">
+            <h1>Crédits</h1>
+            <div class="credits-flex">
+                <div class="colonne-credits">
+                    <p><strong>Musique</strong><br>
+                        <em>Composition et écriture</em> : Wyren <br>
+                        <em>Arrangements</em> : Wyren (voix, guitare acoustique/bouzouki irlandais), Hervé (guitare
+                        électrique),
+                        Gaël (basse, kalimba, synthé)<br>
+                        <em>Mixage</em> : Wyren
+                    </p>
+                    <p><strong>Videos</strong><br>
+                        <em>Cadrage</em> : Coline Schmittag (Mirage) / Mélissande Valat De Croix (à venir)<br>
+                        <em>Montage</em> : Wyren et Mélissande Valat De Croix
+                    </p>
+                </div>
+                <div class="colonne-credits">
+                    <p><strong>Photos</strong><br>
+                        Aleksandra Duncan (<em>1, 3, 6</em>)<br>
+                        Mélissande Valat De Croix (<em>2, 4, 5</em>)<br>
+                        Camila Vammale (<em>7, 8, 9</em>)</p>
+                    <p><strong>Logo</strong><br>
+                        Wyren
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-links">
+            <div class="sm-links">
+                <a target="_blank" href="https://instagram.com/wyrenmusic"><img src="media/instagram-icon.png"
+                        alt="Instagram"></a>
+                <a target="_blank" href="https://facebook.com/wyrenmusic"><img src="media/facebook-icon.png"
+                        alt="Facebook"></a>
+                <a target="_blank" href="https://youtube.com/wyrenmusic"><img src="media/youtube-icon.png"
+                        alt="Youtube"></a>
+            </div>
+            <div class="logo"><a href="index.html"><img src="media/WP-logo-bw.png" alt="Retour à l'accueil"></a></div>
+        </section>
+    </footer>
+</body>
+
+</html>
